@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8f749c5b42.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+
+        <script>
+            function eyePain() {
+                let pain = document.getElementById('main-wrapper');
+                pain.style.backgroundColor = "green";
+
+            }
+        </script>
+
+        <title>Moku's Page</title>
+    </head>
+    <body style="background-color: #121317">
+
+        <div id="sidebar" class="d-flex flex-column align-items-end">
+
+            <div class="profile-wrapper text-center">
+
+                <div class="avatar">
+                    <a class="mx-auto" href="/index.html">
+                        <img class="avatar-p "src="ishy.png" alt="avatar" style="width:90px; height:90px;">
+                    </a>
+                </div>
+
+                <div class="site-title">
+                    <a class="s-title"href="/index.html">
+                        Moku
+                    </a>
+                </div>
+
+                <div class="site-subtitle">Some of my favourite stuff!</div>
+
+            </div>
+
+            <ul class="w-100">
+
+                <li class="nav-item active"><a href="/index.html" class="nav-link">
+                    <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+                    <span>HOME</span>
+                </a></li>
+
+                <li class="nav-item "><a href="/movies.html" class="nav-link">
+                    <i class="fa-fw fas fa-tv ml-xl-3 mr-xl-3 unloaded"></i>
+                    <span>MOVIES</span>
+                </a></li>
+
+                <li class="nav-item "><a href="/music.html" class="nav-link">
+                    <i class="fa-fw fas fa-music ml-xl-3 mr-xl-3 unloaded"></i>
+                    <span>MUSIC</span>
+                </a></li>
+
+                <li class="nav-item"><a href="/games.html" class="nav-link">
+                    <i class="fa-fw fas fa-gamepad ml-xl-3 mr-xl-3 unloaded"></i>
+                    <span>GAMES</span>
+                </a></li>
+
+            </ul>
+        </div>
+
+        <div id="main-wrapper" class="d-flex justify-content-center">
+
+            <div id="main" class="container pl-xl-4 pr-xl-4">
+                <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4" style="margin-top: 6rem;">
+                    <h3>Hey, welcome to my website!</h3>
+                    <p>I spent an unreasonable amount of time, trying to 'imitate' a Jekyll theme I saw on the internet in this Problem Set.</p>
+                    <p>Really liked the way it looked, and it made reading an Aurora4X guide much more pleasant than it would have been on a forum page.</p>
+                    <p>I will probably work on something like this in the future, so that I have an accessible, and possibly nice looking, place for
+                        written videogame guides, that I can substitute with images as 'teaching assistance', you know, for examples and the like!</p>
+                    <p>Theme was called Chirpy, uhh, I like games and movies, and my favourite rock is Gneiss.</p></div>
+
+            </div>
+        </div>
+
+        <footer>
+
+            <div class=container pl-xl-4 pr-xl-4 style="max-width: 1250px">
+
+                <button onClick="eyePain()">Button that hurts your eyes</button>
+
+            </div>
+
+        </footer>
+    </body>
+</html>
