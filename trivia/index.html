@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function rockTrivia(event)
+            {
+                var triggerObject = event.srcElement;
+
+                if(triggerObject.innerHTML != "Gneiss")
+                {
+                    triggerObject.style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML = "Incorrect!";
+
+                }
+                else
+                {
+                    triggerObject.style.backgroundColor = "green";
+                    document.getElementById("result").innerHTML = "Correct!";
+                }
+
+
+            }
+
+            function freeTrivia(event)
+            {
+                if(document.getElementById("answer").value != "Germany")
+                {
+                    document.getElementById("answer").style.backgroundColor = "red";
+                    document.getElementById("result2").innerHTML = "Incorrect!";
+                }
+
+                else
+                {
+                    document.getElementById("answer").style.backgroundColor = "green";
+                    document.getElementById("result2").innerHTML = "Correct!";
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which is my favourite kind of Stone?</h3>
+                <div id="result"></div>
+                <!-- TODO: Add multiple choice question here -->
+
+                <button onclick="rockTrivia(event);">Gneiss</button>
+                <button onclick="rockTrivia(event);">Gabbro</button>
+                <button onclick="rockTrivia(event);">Schist</button>
+                <button onclick="rockTrivia(event);">Shale</button>
+                <button onclick="rockTrivia(event);">Basalt</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Which country contains the city Hamburg?</h3>
+                <!-- TODO: Add free response question here -->
+                <div id="result2"></div>
+
+                    <input type="text" id="answer" style="width : 250px;">
+                    <button onclick="freeTrivia(event);">Check Answer</button>
+
+
+            </div>
+        </div>
+    </body>
+</html>

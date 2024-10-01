@@ -1,0 +1,47 @@
+sort1 uses: Bubble Sort
+
+random5000 0m0.099s
+random10000 0m0.217s
+random50000 0m5.750s
+
+reversed5000 0m0.072s
+reversed10000 0m0.331s
+reversed50000 0m5.113s
+
+sorted5000 0m0.034s
+sorted10000 0m0.085s
+sorted50000 0m0.392s
+
+How do you know?: While it is very fast in a sorted list, it still ends up taking very long in an unsorted one.
+
+sort2 uses: Merge sort
+
+random5000 0m0.054s
+random10000 0m0.088s
+random50000 0m0.575s
+
+reversed5000 0m0.050s
+reversed10000 0m0.097s
+reversed50000 0m0.431s
+
+sorted5000 0m0.045s
+sorted10000 0m0.071s
+sorted50000 0m0.486s
+
+How do you know?: The process takes the same amount of time, regardless of whether or not the supplied list is sorted. Also, it is still faster than the other two, except when you compare a sorted list with the performance of bubble sort.
+
+sort3 uses: Selection Sort
+
+random5000 0m0.054s
+random10000 0m0.140s
+random50000 0m2.341s
+
+reversed5000 0m0.050s
+reversed10000 0m0.157s
+reversed50000 0m2.640s
+
+sorted5000 0m0.055s
+sorted10000 0m0.205s
+sorted50000 0m2.186s
+
+How do you know?: Whether random, or already sorted, the process takes roughly the same amount of time. Additionally, it is pretty slow.
